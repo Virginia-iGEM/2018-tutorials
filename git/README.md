@@ -1,4 +1,6 @@
-# 1 Gitting Started!
+# Virginia iGEM Git Tutorial
+
+## 1 Gitting Started
 
 This is a quick primer, primarily aimed at individuals who have little to no experience with programming on how to use Git and Github. It’s also for programmers who have never used it before, have tried and failed to use it before, or haven’t used it in ages and need a refresher.
 
@@ -6,7 +8,7 @@ For those who have used version control before, or are using it now, or are very
 
 If you have any questions, feel free to shoot me a private message in GroupMe or email Dylan Culfogienis at dtc9bb@virginia.edu. Or just, y’know, talk to me, I don’t bite.
 
-# 2 Table of Contents
+## 2 Table of Contents
 
 1. [Gitting Started](https://github.com/Mantissa-23/VGEM-2018/tree/master/.getting_started#1-gitting-started)
 2. [Table of Contents](https://github.com/Mantissa-23/VGEM-2018/tree/master/.getting_started#2-table-of-contents)
@@ -15,17 +17,18 @@ If you have any questions, feel free to shoot me a private message in GroupMe or
 5. [Git Terminal Tutorial](https://github.com/Mantissa-23/VGEM-2018/tree/master/.getting_started#6-quick-tutorial-if-you-want-to-use-the-command-prompt-instead-of-the-git-gui)
 6. [Why don't we just use Google Drive](https://github.com/Mantissa-23/VGEM-2018/tree/master/.getting_started#5-why-dont-we-just-use-google-drive)
 
-# 3 What is Github
+## 3 What is Github
 
 [Github](https://github.com) is a source code repository hosting and sharing website that makes use of the Git Version Control System (Git VCS). In layman's terms, it’s kinda like Google Drive, but specifically meant for open-source, code-centric software projects that many people will be working on at once. Some projects that are hosted on Github include Linux, the Python programming language, and a majority of the code that makes websites like Facebook, Twitter, Google and Youtube run.
 
 If you don’t care about how Git/Github works and just want to get work done, just read [Section 4, Git GUI](https://github.com/Mantissa-23/VGEM-2018/tree/master/.getting_started#4-git-gui-tutorial). If you're comfortable with using a terminal, or are willing to learn (it's really not that hard), check out [Section 5, Git Termianl](https://github.com/Mantissa-23/VGEM-2018/tree/master/.getting_started#5-git-terminal-tutorial). The terminal makes more sense generally and allows you to move a bit faster. If you’re miffed that you have to learn how to use another damn program and/or are curious about how Git works and why we’re using it, you should probably read [Section 5 first, Why don’t we just use Google Drive](https://github.com/Mantissa-23/VGEM-2018/tree/master/.getting_started#6-why-dont-we-just-use-google-drive).
 
-# 4 Git GUI Tutorial
+## 4 Git GUI Tutorial
 
 If you have any trouble with any of these steps, please do not slam your face against your desk and try to fix things for hours. Talk to me. Setup should only take 5 minutes. Committing and pushing changes should take about 20 seconds. If it’s taking longer than this, I’ll sit down with you and work you through it, or answer any questions you have.
 
-## 4.1 Getting set up
+### 4.1 Getting set up
+
 Step 1, for most people, download Git from the official website: https://git-scm.com/downloads.
 
 Note, this guide assumes you are on Windows and using the graphical Git program. Mac and Linux users should be able to follow the guide, as the program is cross-platform; let me know if you have issues. If you want to use Git integrated with your IDE, or through the commandline, I'll sit down with you and try and help, but you're mostly on your own. Google is your best friend.
@@ -73,7 +76,7 @@ Change these to the user name you created for Github and the email address you s
 [setup-5]: https://raw.githubusercontent.com/Mantissa-23/VGEM-2018/master/.getting_started/images/Setup-5.png "setup-5"
 [setup-5-1]: https://raw.githubusercontent.com/Mantissa-23/VGEM-2018/master/.getting_started/images/Setup-5-1.png "setup-5-1"
 
-## 4.2 How do I do work
+### 4.2 How do I do work
 
 Alright, you’ve got everything set up, let’s get some actual work done. Editing code is something you do on your own, Git is not an IDE, Git is not a text editor. Pop open Visual Studio or Pycharm or Eclipse or Notepad++ or Vim or EMACS or whatever you use to edit text files. Please do not use Word to edit text files. That is not okay. Enter the project and make whatever changes you want to make. In this example, I’m going to add a simple Python program, hello_world_dtc.py, to the directory /test/ in the project:
 
@@ -154,7 +157,7 @@ And that’s the basics of how you work with Git. You may notice there are about
 [work-13]: https://raw.githubusercontent.com/Mantissa-23/VGEM-2018/master/.getting_started/images/Work-13.png "work-13"
 [work-14]: https://raw.githubusercontent.com/Mantissa-23/VGEM-2018/master/.getting_started/images/Work-14.png "work-14"
 
-## 4.3 Pulling Changes
+### 4.3 Pulling Changes
 You probably won't have to do this any time soon, so you may want to refer back to this section later once everyone starts working on the codebase.
 
 In the event that someone else makes changes while you are making changes, and that person commits those changes to their repository and pushes those changes to Github (this is more common than you think), you will have to **Fetch** their changes from the remote repository, **Merge** them together in a new commit (called a Merge commit), and then push your changes combined with theirs to the repository. This combined **Fetch** + **Merge** operation is called a **Pull.** Confusing terminology, I know. Trust me, that's like, child's play, there are also commands called **Cherrypick** and **Rebase,** I still have no idea what they do.
@@ -178,6 +181,7 @@ In order to resolve these conflicts, open your text editor/IDE of choice, get in
 In order to "keep" a change, simply delete the lines you don't want. You can also make edits, you don't have to keep either line.
 
 Note the following symbols:
+
 ```
 <<<<<<< HEAD
 +some line of code
@@ -196,7 +200,8 @@ In both cases (merge is auto resolved and merge conflict), you can now **Push** 
 
 This concludes the guide on **Fetching** and **Merging**. I understand that was a lot; if you have any questions, again, don't be afraid to ask.
 
-# 5 Git Terminal Tutorial
+### 5 Git Terminal Tutorial
+
 I personally find that using the command prompt (cmd) is easier and faster to use than the Git GUI, so here's a brief tutorial on how to use the cmd line to do the same thing. 
 
 You will first need to open the command prompt on your computer. Type "cmd" in the search bar on your laptop and it will be the first thing that pops up. Alternatively, you can use Git Bash by typing Bash in your start menu or right clicking in an open directory and clicking on Git Bash. Git Bash runs in a more complete terminal emulator than Cmd, and allows for things like custom themes, globbing, bash scripts, etc. etc. that will make your life easier if you know what you're doing. For this tutorial we'll use cmd.exe, but the process is nearly identical for both terminals. On Windows, cmd.exe will look like this:
@@ -206,6 +211,7 @@ You will first need to open the command prompt on your computer. Type "cmd" in t
 You will need to find where you saved the cloned repository (that you downloaded way back when) on your computer. If you have not done downloaded the repository yet, refer back to Section 4 or 5 first, then read this section.
 
 To get to the folder where the cloned repository is saved, you need several Windows commands:
+
 1. **cd**: _cd name_of_subfolder_ allows you to access a subfolder. Ex. _cd "VA iGEM"_ will allow you to access the subfolder in the current folder that you are in. 
 2. **cd ..** allows you to jump backwards a folder, in case you cd into the wrong folder. 
 3. **dir**: typing _dir_ into the cmd shows all the subfolders in the current folder you are in. This is useful when you are trying to cd into a folder but you don't remember what the name of the folder is. 
@@ -218,14 +224,16 @@ Note that the first part of each new line in the cmd denotes what the file path 
 
 Once you are in the folder where you saved the cloned repository, you are ready to do a **pull**. 
 
-## 5.1 Pull
+### 5.1 Pull
+
 Type _git pull origin master_. That's it. It's that easy.This allows you to pull from the master branch. Make sure to pull every time before you start editing stuff on GitHub. 
 
 ![cmd-3](https://github.com/Mantissa-23/VGEM-2018/blob/master/.getting_started/images/cmd-3.PNG)
 
 Note here that my GitHub repo is already up to date, but it's good practice to pull every time before you make changes. 
 
-## 5.2 Push
+### 5.2 Push
+
 This is a little more complicated. You want to **commit** and **push** your changes to the GitHub repo by following this steps.
 
 1. Type _git add ._
@@ -239,7 +247,25 @@ Throughout this, you may run into issues if your edits are in direct conflict wi
 
 That's it! If you have any questions, feel free to talk to me in lab or just shoot me a message...and Google will be your best friend as well. 
 
-# 6 Why don't we just use Google Drive
+## 6 Set Up Autoupdate on Git Rewrite
+
+In the event that you are using one of our tools such as `igem-wikibrick` or `generator-igemwiki`, or any tool for tha matter that makes use of npm or bower, the following information might be useful for you:
+
+**Optional, but _highly recommended_ (for your sanity):**
+
+In the event that _either_ your or another team member installs new packages with `npm install` or `bower install`, you will have to run `npm update` or `bower update`. If you know that you're going to forget to type `npm update` and `bower update` every time this occurs (like me), you can add a _hook_ to your git repository that will automatically run these commands one a pull.
+
+To do this, enter the folder `igem-wikibrick\.git\hooks`. It should look like this:
+
+![set-up-1](https://github.com/Virginia-iGEM/igem-wikibrick/blob/master/docs/tutorial/set-up-1.PNG)
+
+Note: the `.git` folder may not show up, as it may be a hidden folder. [This website](https://www.howtogeek.com/howto/windows-vista/show-hidden-files-and-folders-in-windows-vista/) shows you how to find it.
+
+Once you're here, create a new file named `post-rewrite` with your favorite text editor and copy [this code](https://gist.github.com/digitaljhelms/7901283#file-post-rewrite) into that file.
+
+Note, if a new version of `igem-wikbrick` is released, the tool can be updated with `npm update`.
+
+## 7 Why don't we just use Google Drive
 
 **Note, you can skip this section if you believe me and trust that Git is awesome and have accepted the fact that we’re using Github. This section is for everyone that’s thinking “Why do I have to learn another piece of software for this synthetic biology project.”**
 
