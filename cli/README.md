@@ -12,11 +12,11 @@ For Windows users, we reccommend the using **Powershell**, which comes with its 
 
 Windows users can find Powershell in the start menu just by searching for it. Alternatively, a Powershell can be launched through the admin menu by typing `C-x i` (Ctrl+X i).
 
-![Powershell Terminal](win1.PNG)
+![Powershell Terminal](images/win1.PNG)
 
 Launching the terminal will differ depending on which Unix you are using. Mac users can find Terminal in Launchpad. Linux users are on their own.
 
-![BASH Terminal](unix1.PNG)
+![BASH Terminal](images/unix1.PNG)
 
 ## Hello World
 
@@ -24,9 +24,9 @@ Obligatory Hello World:
 
 `echo 'Hello World'` will work in both Powershell and BASH.
 
-![Powershell Hello World](win2.PNG)
+![Powershell Hello World](images/win2.PNG)
 
-![BASH Hello World](unix1.PNG)
+![BASH Hello World](images/unix1.PNG)
 
 `echo` is a command which spits out whatever you send to it into `stdout`.
 
@@ -40,9 +40,9 @@ We can actually find out where our terminal starts using a command we've already
 
 `echo $HOME`
 
-![Powershell finding our way HOME](win3.PNG)
+![Powershell finding our way HOME](images/win3.PNG)
 
-![BASH finding our way HOME](unix3.PNG)
+![BASH finding our way HOME](images/unix3.PNG)
 
 So, by default, Windows users' shells start in `C:\Users\<username>`, while Unix users start in `/home/<username>`.
 
@@ -54,23 +54,23 @@ We use the `cd` command to move to other folders. `cd` stands for Change Directo
 
 Note that your prompt - the text automatically placed at the beginning of every line - now reads that you are at a different location. You've successfully changed directories.
 
-![Powershell Changing Dirs](win4.PNG)
+![Powershell Changing Dirs](images/win4.PNG)
 
-![BASH Changing Dirs](unix4.PNG)
+![BASH Changing Dirs](images/unix4.PNG)
 
 Now, to see what's in this folder, we can type in `ls` or `dir`. These commands do nearly identical things, however, `ls` is not available on older shells (such as Window's cmd.exe). My point in telling you this is - if `ls` doesn't work, use `dir` instead.
 
-![Powershell ls](win5.PNG)
+![Powershell ls](images/win5.PNG)
 
-![BASH ls](unix5.PNG)
+![BASH ls](images/unix5.PNG)
 
 This shows you all the files and subdirectories you have in the current directory.
 
 You can also type `ls subdirectoryname` to look inside of a folder in your current directory. For example:
 
-![Powershell ls2](win6.PNG)
+![Powershell ls2](images/win6.PNG)
 
-![BASH ls2](unix6.PNG)
+![BASH ls2](images/unix6.PNG)
 
 **And let's take it back home**
 
