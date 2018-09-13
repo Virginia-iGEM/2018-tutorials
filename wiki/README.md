@@ -49,6 +49,30 @@ We used a ton of these (and of course you get all of them for free when you use 
 
 [SASS](https://sass-lang.com/), a superset of CSS, which makes it far easier to reuse code and create complex styles specific to certain elements in your website. To quote the headline on their website: "CSS with Superpowers." You won't understand why it's valuable until you start using it, then you'll never be able to go back to plain CSS.
 
+Our favorite part of SASS is what are called mixins; a practical example:
+
+``` SASS
+@mixin center-image { // Define the center-image mixin which centers images within their containers
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main article#landing-content {
+  img {
+    @include center-image;
+  }
+}
+
+navline li ul li {
+  img {
+    @include center-image;
+  }
+}
+```
+
+This is how you reuse code in SASS. It's equivalent to functions in imperative programming; wrap up your reusable code and pass it around to be used by everyone everywhere.
+
 We also used the [autoprefixer](https://github.com/postcss/autoprefixer) CSS postprocessor to add all of our browser-specific tags. These are CSS properties that begin with `--webkit` or `--edge` that are necessary to make certain styling work with certain browsers (namely Safari and Microsoft browsers). We didn't even have to think about these tags because we had a tool that added them for us.
 
 #### For our Code (JavaScript)
