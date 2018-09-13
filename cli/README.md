@@ -8,13 +8,13 @@ I will be providing parallel instructions for both Windows and UNIX users. Note 
 
 A **terminal** is an interface of some kind to a **shell**. The terminal is usually defined as the window that contains your command line.
 
-For Windows users, we reccommend the using **Powershell**, which comes with its own terminal. For Linux users, we reccommend either using your distro's build in terminal emulator, probably named Terminal or some such. Macs come with a built-in terminal emulator as well, also called Terminal; though [iTerm2](https://www.iterm2.com/) is the most popular amongst Mac terminal users. Linux and Mac users will likely being some variant of **sh**. I will be using **BASH**, the most common **sh**-based shell, but these commands are fairly generic and should apply to almost all Unix shells.
+For Windows users, we recommend the using **Powershell**, which comes with its own terminal. For Linux users, we recommend using your distro's build in terminal emulator. Macs come with a built-in terminal emulator as well, also called Terminal; though [iTerm2](https://www.iterm2.com/) is the most popular amongst Mac terminal users. Linux and Mac users will likely being some variant of **sh**. I will be using **BASH**, the most common **sh**-based shell, but these commands are fairly generic and should apply to almost all Unix shells.
 
 Windows users can find Powershell in the start menu just by searching for it. Alternatively, a Powershell can be launched through the admin menu by typing `C-x i` (Ctrl+X i).
 
 ![Powershell Terminal](images/win1.PNG)
 
-Launching the terminal will differ depending on which Unix you are using. Mac users can find Terminal in Launchpad. Linux users are on their own.
+Launching the terminal will differ depending on which version of Unix you are using. Mac users can find Terminal in Launchpad. Linux users are on their own.
 
 ![BASH Terminal](images/unix1.PNG)
 
@@ -28,13 +28,13 @@ Obligatory Hello World:
 
 ![BASH Hello World](images/unix1.PNG)
 
-`echo` is a command which spits out whatever you send to it into `stdout`.
+`echo` is a command which spits out whatever you send into `stdout`. It is similar to a print statement in Python. 
 
 This introduces our first shell concepts: `stdin` and `stdout`. These stand for "Standard In" and "Standard Out"; as you might've guessed, this refers to user input and shell output. Anything you type into a shell is passed to `stdin`, which the shell can then interpret once you hit `RET` (the enter key). `stdout` is any data programs spit out, and will be displayed directly in the shell.
 
 ## Looking Around and Moving Around
 
-By default, a user tty (tty is short for `Terminal`. It's actually short for `teletypewriter`, but that's historical) will start in the $HOME directory. $HOME is a variable; dollar signs denote variables in both Powershell and BASH.
+By default, a user tty (tty is short for `Terminal`; it's actually short for `teletypewriter`, but that's historical) will start in the $HOME directory. $HOME is a variable; dollar signs denote variables in both Powershell and BASH.
 
 We can actually find out where our terminal starts using a command we've already learned:
 
@@ -50,7 +50,7 @@ So, by default, Windows users' shells start in `C:\Users\<username>`, while Unix
 
 We use the `cd` command to move to other folders. `cd` stands for Change Directory.
 
-`cd Documents` - Assuming you have a documents folder. If not, follow along with a similar folder like `Music` or `Desktop`.
+`cd Documents` - This is assuming you have a documents folder. If not, follow along with a similar folder like `Music` or `Desktop`.
 
 Note that your prompt - the text automatically placed at the beginning of every line - now reads that you are at a different location. You've successfully changed directories.
 
@@ -58,7 +58,7 @@ Note that your prompt - the text automatically placed at the beginning of every 
 
 ![BASH Changing Dirs](images/unix4.PNG)
 
-Now, to see what's in this folder, we can type in `ls` or `dir`. These commands do nearly identical things, however, `ls` is not available on older shells (such as Window's cmd.exe). My point in telling you this is - if `ls` doesn't work, use `dir` instead.
+Now, to see what's in this folder, we can type in `ls` or `dir`. These commands do nearly identical things, however, `ls` is not available on older shells (such as Window's cmd.exe). My point in telling you this is if `ls` doesn't work, use `dir` instead.
 
 ![Powershell ls](images/win5.PNG)
 
@@ -74,7 +74,7 @@ You can also type `ls subdirectoryname` to look inside of a folder in your curre
 
 **And let's take it back home**
 
-You can type `cd ~` at any time to return to your home folder.
+You can type `cd ~` at any time to return to your home folder. You can also type `cd ..` to go back to the previous folder you were in.
 
 ## Creating directories
 
@@ -134,13 +134,13 @@ Some other commands you may find useful:
   - Bash: `mv item destination`
 - Open a simple text editor
   - Bash: `nano`
-  - Powershell: There's... No build in terminal text editor. Sorry.
+  - Powershell: There's... No built-in terminal text editor. Sorry.
 
 And now some fun stuff:
 
 - Open a more complex text editor
   - Bash: `vi`
-  - Powershell: Again, no builtin texteditors. You can download them if you want.
+  - Powershell: Again, no built-in text editors. You can download them if you want.
 - Recursively list all directories and files and find files and directories by keywords
   - Bash: `find | grep keyword`
   - Powershell: `dir -s | findstr keyword`
