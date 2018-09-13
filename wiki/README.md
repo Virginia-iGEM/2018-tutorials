@@ -119,4 +119,4 @@ So, don't do this. `igem-wikibrick` has a setting that explicitly disables uploa
 
 ## Contributing
 
-If you have anything you'd like to put on this page (for example, if your iGEM team has written any 
+If you have anything you'd like to put on this page (for example, if your iGEM team has written any guides of their own), feel free to submit a pull request or just email us with links to your content at virginia.igem@gmail.com.
