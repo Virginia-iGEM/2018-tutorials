@@ -115,7 +115,7 @@ So, don't do this. `igem-wikibrick` has a setting that explicitly disables uploa
 - www.Codepen.io for any time you need functional CSS or JavaScript that you don't know how to write. *We strongly recommend reading through snippets and understanding them instead of blindly copy-and-pasting, as you may grab some properties or code you really don't want in your wiki.*
 - Team Peshawar 2016 [has their own list of reccommendations](https://2016.igem.org/Team:Peshawar/Wiki). You'll notice many of them are the same as ours, they're just using different tools. Their guide inspired many of the tools we built.
 - iGEM University of Toronto 2016 has a relevant description of how Mediawiki works on their [Recipes page](https://github.com/igemuoftATG/igemwiki-api/blob/master/recipes/README.md) for the `igemwiki-api` tool, which our own tool makes use of.
-- iGEM-Copenhagen 2018 has a list of [awesome iGEM resources](https://igem-copenhagen.github.io/awesome-iGEM/), including wiki resources (including links to our toolset ¯\_(ツ)_/¯)
+- iGEM-Copenhagen 2018 has a list of [awesome iGEM resources](https://igem-copenhagen.github.io/awesome-iGEM/), including wiki resources (including links to our toolset ¯\\_(ツ)_/¯)
 
 ## Contributing
 
