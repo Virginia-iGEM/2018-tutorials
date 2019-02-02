@@ -109,6 +109,8 @@ A bit of a history lesson: `!important` is a decorator from the very first versi
 
 But to circumvent `load.php`, sometimes you have to use `!important`. Don't be afraid to do it, you aren't gonna break anyone's browsers. You should just... Never do it outside of working on the iGEM wiki. This is a problem with the way the iGEM wiki is set up, and absolutely should change in the future. Email your iGEM representative and let your voice be heard.
 
+**Update:** We are updating iGEM-wikibrick so that !important probably won't be needed anymore. More on this as it develops.
+
 ### Use and abuse the Inspector
 
 Your web browser has an inspector. You can open it by right clicking on any element on your wiki page (be it hosted locally or live), and click Inspect Element. This will tell you everything about how the element is loaded, styled, rendered, and let you play with it in JavaScript and see how all of your scripts are behaving.
@@ -117,9 +119,9 @@ It is like a debugger on steroids.
 
 It is invaluable. If something is ever not working as inspected, use the Inspector.
 
-The Inspetor additionally lets you play around with styles and delete or add whole chunks of markdown in your browser, in the event that you have to try a bunch of things and you don't want to reload the page every time. This can also help in rooting out problems.
+The Inspetor additionally lets you play around with styles and delete or add whole chunks of markup in your browser, in the event that you have to try a bunch of things and you don't want to reload the page every time. This can also help in rooting out problems.
 
-Do not comment out. Do not `console.log`. Inspect.
+Commenting things out and `console.log`ging are good tools. Inspect is a _fantastic_ one.
 
 ### Don't accidentally upload your own version of JQuery.
 
@@ -138,7 +140,7 @@ So, don't do this. `igem-wikibrick` has a setting that explicitly disables uploa
 - www.w3schools.com for all basic HTML/CSS/JavaScript lessons
 - www.Codepen.io for any time you need functional CSS or JavaScript that you don't know how to write. *We strongly recommend reading through snippets and understanding them instead of blindly copy-and-pasting, as you may grab some properties or code you really don't want in your wiki.*
 - Team Peshawar 2016 [has their own list of reccommendations](https://2016.igem.org/Team:Peshawar/Wiki). You'll notice many of them are the same as ours, they're just using different tools. Their guide inspired many of the tools we built.
-- iGEM University of Toronto 2016 has a relevant description of how Mediawiki works on their [Recipes page](https://github.com/igemuoftATG/igemwiki-api/blob/master/recipes/README.md) for the `igemwiki-api` tool, which our own tool makes use of.
+- iGEM University of Toronto 2016 has a relevant description of how Mediawiki works on their [Recipes page](https://github.com/igemuoftATG/igemwiki-api/blob/master/recipes/README.md) for the `igemwiki-api` tool, which our own tool makes use of. **Very useful** for underestanding the black magic that runs the iGEM Wiki.
 - iGEM-Copenhagen 2018 has a list of [awesome iGEM resources](https://igem-copenhagen.github.io/awesome-iGEM/), including wiki resources (including links to our toolset ¯\\_(ツ)_/¯)
 
 ## Contributing
